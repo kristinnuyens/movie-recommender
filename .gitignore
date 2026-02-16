@@ -1,0 +1,25 @@
+.DS_Store
+*.zip
+*.csv
+*.JSON
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+*.egg-info/
+
+# Databricks local files
+*.dbc
+*.dbx
+*.log
+
+# IDEs
+.idea/
+.vscode/
