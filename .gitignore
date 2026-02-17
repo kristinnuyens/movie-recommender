@@ -5,6 +5,7 @@
 *.gz
 *.tsv
 *.parquet
+*.txt
 
 # macOS
 .DS_Store
@@ -29,5 +30,4 @@ venv/
 data/*
 data/
 old-data/
-data-imdb/
-data-movielens/
+enrich-wo-ID/
