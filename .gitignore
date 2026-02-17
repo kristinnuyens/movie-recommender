@@ -2,6 +2,8 @@
 *.zip
 *.csv
 *.JSON
+*.gz
+*.tsv
 
 # macOS
 .DS_Store
