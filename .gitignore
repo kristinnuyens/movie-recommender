@@ -25,3 +25,4 @@ venv/
 # IDEs
 .idea/
 .vscode/
+data/*
