@@ -6,7 +6,7 @@ This project simulates a real-world data engineering scenario at a streaming pla
 The objective was to build a production-style Lakehouse architecture using the Medallion design pattern and train a recommendation model using Spark MLlib.
 Data originates from multiple fragmented sources (mainly CSV) and is progressively refined across Bronze, Silver, and Gold layers before training an ALS recommendation engine. Finally a workflow pipeline was orchestrated using Databricks Jobs.
 
-- Environment Azure Databricks (Cimmunity Ediction)
+- Environment Azure Databricks (Community Edition)
 - Language PySpark
 - Storage Delta Lake
 
@@ -33,10 +33,10 @@ ALS Model (Recommendations)
 - External metadata for enrichment (CSV) via TMDB API
 
 # 🥉 Bronze
-Raw data is ingested and stored as Delta tables without transformation.
+Raw data is ingested and stored as Delta tables without transformation
 
 Key:
-Bronze stores immutable raw data in Delta format to ensure reliability, reproducibility, and traceability.
+Bronze stores immutable raw data in Delta format to ensure reliability, reproducibility, and traceability
 
 Tables:
 - bronze_ratings_csv
@@ -44,7 +44,7 @@ Tables:
 - bronze_links_csv
 
 # 🥈 Silver
-Data quality enforcement and relational modeling.
+Data quality enforcement and relational modeling
 
 Actions:
 - Explicit schema casting
@@ -55,7 +55,7 @@ Actions:
 - Creation of fact and dimension tables
 
 Key:
-Silver cleans, validates, and structurally models the data into reliable fact and dimension tables.
+Silver cleans, validates, and structurally models the data into reliable fact and dimension tables
 
 Tables:
 - silver_fact_ratings
@@ -63,17 +63,17 @@ Tables:
 - silver_dim_users
 
 # 🥇 Gold
-Business-ready, optimized datasets for analytics and ML.
+Business-ready, optimized datasets for analytics and ML
 
 Actions:
-- User-level aggregations (e.g. total_ratings, avg_rating)
+- User-level aggregations
 - Final fact table for model training
 - Clean dimensional enrichment
 - Null validation
 - Structured ML training dataset
 
 Key:
-Gold aggregates and optimizes trusted data into business-ready datasets for analytics and machine learning.
+Gold aggregates and optimizes trusted data into business-ready datasets for analytics and machine learning
 
 Tables:
 - gold_fact_ratings
@@ -121,11 +121,12 @@ This project demonstrates:
 - Multi-source data engineering
 - Spark ML integration
 - Workflow orchestration in Databricks
+
 It reflects a production-style engineering approach within Community Edition constraints.
 
 # 🧑‍💻 Contributors
 
-While a team of 4 female Data Engineers in spe was assigned, we decided to work on the project individually for an optimized learning experience. I was assigned the project leader. This project is therefor considered a solo project, except for the presentation, on which we shared learnings.
+While a team of 4 female aspiring Data Engineers was assigned, we decided to work on the project individually for an optimized learning experience. I was assigned the project leader. This project is therefore considered a solo project, except for the presentation, on which we shared learnings.
 - Kristin Nuyens
 
 # ⏰ Timeline
