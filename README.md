@@ -93,7 +93,7 @@ ALS collaborative filtering model:
 1. Execute 01_bronze notebook
 2. Execute 02_silver notebook
 3. Execute 03_gold notebook
-4. Execute 04_train notebook
+4. Execute 04_als_model notebook
 ### Option 2: Automated (Recommended)
 Trigger the Databricks Workflow job
 
